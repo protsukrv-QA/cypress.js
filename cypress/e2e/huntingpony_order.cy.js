@@ -16,6 +16,7 @@ describe('Проверка оформления заказа', function () {
          cy.get('#order_field_24333471').type("собакен");
          cy.get('.co-delivery_method-list > .co-input--captcha > .g-recaptcha > [style="width: 304px; height: 78px;"] > div > iframe').click();
          cy.get('#create_order').click();
+         cy.contains("Ваш заказ успешно оформлен.")
 
            })
     })
